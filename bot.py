@@ -14,8 +14,7 @@ avaliable = []
 
 with open('name_list.txt', 'r') as name_list:
     for name in name_list:
-        name = name.replace('\n', '')
-        name = name.lower()
+        name = name.replace('\n', '').replace(' ', '').lower()
         if len(name) >= 3:
             print(name)
             
